@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+
+/* 여백초기화 */
+div.container.px-5{
+    padding-left: 0;
+    padding-right: 0;
+}
+.col-lg-6 {
+    padding: 0;
+}
+
+/* 네비게이션 */
+#mainNav .container{
+    max-width: 1200px;
+}
+#mainNav .container.px-5 #navbarResponsive ul {
+    margin-left: 85px;
+}
+#mainNav .container.px-5 #navbarResponsive ul li {
+    margin-right: 24px;
+}
+#mainNav .container.px-5 #navbarResponsive ul li a {
+    padding: 28px 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+}
+/* 메인 */
+.masthead {
+    height: 1000px;
+    background-image: url(../assets/img/componant/circle_people.png), url(../assets/img/componant/raise_hand.png);
+    background-repeat: no-repeat;
+    background-position: 90% 40%, 2% 100%;
+}
+.masthead .col-lg-6 {
+    padding-right: 0;
+}
+.row.gx-5.align-items-center {
+    margin-top: 130px;
+}
+.main_small {
+    font-size: 48px;
+    font-weight: 500;
+}
+.main_big {
+    font-size: 120px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.sub_text {
+    font-size: 16px;
+    font-weight: 400;
+}
+.lead.fw-normal.text-muted.mb-5 {
+    margin-top: 60px;
+}
