@@ -35,6 +35,7 @@ div.container.px-5{
     background-image: url(../assets/img/componant/circle_people.png), url(../assets/img/componant/raise_hand.png);
     background-repeat: no-repeat;
     background-position: 90% 40%, 2% 100%;
+    background-color: #fff;
 }
 .masthead .col-lg-6 {
     padding-right: 0;
@@ -57,4 +58,82 @@ div.container.px-5{
 }
 .lead.fw-normal.text-muted.mb-5 {
     margin-top: 60px;
+}
+
+/* 섹션 공통 */
+h2.section_title {
+    font-size: 60px;
+    font-weight: 700;
+}
+p.section_sub {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+/* WORKS */
+#works .works_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+#works .container {
+    padding: 0;
+}
+.works_wrap .left_wrap, .works_wrap .right_wrap .box {
+    border-radius: 30px;
+}
+#works .left_wrap {
+    width: 580px;
+    height: 700px;
+    background-color: #D6F2DE;
+    background-image: url(../assets/img/componant/uiux.png), url(../assets/img/componant/phone1.png);
+    background-repeat: no-repeat;
+    background-size: 50%, 56%;
+    background-position: 20% 100%, 70% 101%;
+}
+#works .right_wrap {
+    align-content: space-between;
+}
+#works .works_wrap p {
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+#works .works_wrap .left_wrap p {
+    text-align: center;
+}
+#works .works_wrap .right_wrap div:first-child {
+    background-color: #D2EFFF;
+    background-image: url(../assets/img/componant/souvenir.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 10% 100%
+}
+#works .works_wrap .right_wrap div:first-child p {
+    text-align: right;
+    padding-right: 50px;
+}
+#works .works_wrap .right_wrap div:nth-child(2) {
+    background-color: #FFD96D;
+    background-image: url(../assets/img/componant/publication.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 80% 101%;
+}
+#works .works_wrap .right_wrap div:nth-child(2) p {
+    text-align: left;
+    padding-left: 50px;
+}
+#works .right_wrap .box {
+    width: 580px;
+    height: 330px;
+    background-color: rgb(98, 148, 212);
+}
+#works .right_wrap .box:nth-child(2) {
+    margin-top: 40px;
+}
+
+/* 선수촌 */
+.playchon_box{
+    height: 1080px;
+    background-image: url(../assets/img/componant/bg_Playchon.png);
 }
