@@ -135,5 +135,21 @@ p.section_sub {
 /* 선수촌 */
 .playchon_box{
     height: 1080px;
-    background-image: url(../assets/img/componant/bg_Playchon.png);
+    background-image: url(../assets/img/componant/tablet1.png), url(../assets/img/componant/bg_Playchon.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+.btn_playchon {
+    width: 240px;
+    height: 63px;
+    background-color: #FDDC7F;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 500px;
+}
+.btn_playchon span {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
 }
