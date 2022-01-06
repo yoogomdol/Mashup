@@ -71,8 +71,8 @@ h2.section_title {
 p.section_sub {
     font-size: 16px;
     font-weight: 400;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 /* WORKS */
 #works .works_wrap {
@@ -159,8 +159,15 @@ p.section_sub {
 }
 
 /* 포트폴리오 */
+#portfolio .row.thumbnail_area {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+}
 #portfolio .row.thumbnail_area div.col-sm-6.col-md-4 {
     margin-top: 100px;
+    width: 340px;
 }
 #portfolio .row.thumbnail_area .col-sm-6.col-md-4.topmargin0{
     margin-top: 0;
@@ -168,6 +175,7 @@ p.section_sub {
 #portfolio .row.thumbnail_area div.thumbnail {
     width: 340px;
     height: 350px;
+    margin-right: 0;
 }
 #portfolio .row.thumbnail_area div.thumbnail .img_wrap {
     width: 340px;
@@ -224,6 +232,11 @@ p.section_sub {
 }
 
 /* 컨택트 */
+#contact {
+    background-image: url(../assets/img/componant/contact.png);
+    background-repeat: no-repeat;
+    background-position: 96% 86%;
+}
 #map {
     width: 660px;
     height: 415px;
