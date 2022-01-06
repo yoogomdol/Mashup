@@ -15,6 +15,9 @@ div.container.px-5{
 #mainNav .container{
     max-width: 1200px;
 }
+#mainNav div.container.px-5 .navbar-brand.fw-bold{
+    font-weight: 900;
+}
 #mainNav .container.px-5 #navbarResponsive ul {
     margin-left: 85px;
 }
@@ -32,9 +35,9 @@ div.container.px-5{
 /* 메인 */
 .masthead {
     height: 1000px;
-    background-image: url(../assets/img/componant/circle_people.png), url(../assets/img/componant/raise_hand.png);
+    background-image: url(../assets/img/componant/circle_people.png), url(../assets/img/componant/raise_hand.png),url(../assets/img/componant/big_name.png), url(../assets/img/componant/small_name.png);
     background-repeat: no-repeat;
-    background-position: 90% 40%, 2% 100%;
+    background-position: 90% 30%, 2% 100%, 10% 30%, 90% 100%;
     background-color: #fff;
 }
 .masthead .col-lg-6 {
@@ -66,7 +69,7 @@ h2.section_title {
     font-weight: 700;
 }
 p.section_sub {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
     margin-bottom: 60px;
 }
@@ -152,4 +155,72 @@ p.section_sub {
     font-size: 20px;
     font-weight: 400;
     color: black;
+}
+
+/* 포트폴리오 */
+#portfolio .row.thumbnail_area div.col-sm-6.col-md-4 {
+    margin-top: 100px;
+}
+#portfolio .row.thumbnail_area .col-sm-6.col-md-4.topmargin0{
+    margin-top: 0;
+}
+#portfolio .row.thumbnail_area div.thumbnail {
+    width: 340px;
+    height: 350px;
+}
+#portfolio .row.thumbnail_area div.thumbnail .img_wrap {
+    width: 340px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+#portfolio .row.thumbnail_area div.thumbnail:hover img, #portfolio .row.thumbnail_area div.thumbnail .img_wrap img:hover {
+    transform: scale(1.5, 1.5);
+    transition-duration: 0.5s;
+}
+#portfolio .row.thumbnail_area div.thumbnail .img_wrap img {
+    width: 340px;
+    height: 260px;
+    border-radius: 30px;
+    transition-duration: 1s;
+}
+
+/* a태그 스타일 삭제 */
+#portfolio .row.thumbnail_area div.thumbnail .caption a:link, 
+#portfolio .row.thumbnail_area div.thumbnail .caption a:visited,
+#portfolio .row.thumbnail_area div.thumbnail .caption a:hover{
+    color: black;
+    text-decoration: none;
+}
+#portfolio .row.thumbnail_area div.thumbnail .caption h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 30px;
+    text-align: center;
+}
+#portfolio .row.thumbnail_area div.thumbnail .caption .portfolio_tag_area {
+    display: flex;
+    justify-content: center;
+}
+#portfolio .row.thumbnail_area div.thumbnail .caption span {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+    display: inline-block;
+    margin: 0 11px;
+}
+#portfolio .row.thumbnail_area .portfolio_more {
+    width: 330px;
+    height: 50px;
+    border: 1px solid #3f68f7;
+    background-color: #fff;
+    color: #000;
+    margin: 100px auto 0;
+}
+#portfolio .row.thumbnail_area .portfolio_more:hover {
+    background-color: #3f68f7;
+    color: #fff;
+}
+#portfolio .row.thumbnail_area hr {
+    posi
 }
