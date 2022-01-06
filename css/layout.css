@@ -71,6 +71,7 @@ h2.section_title {
 p.section_sub {
     font-size: 16px;
     font-weight: 400;
+    margin-top: 30px;
     margin-bottom: 60px;
 }
 /* WORKS */
@@ -221,6 +222,31 @@ p.section_sub {
     background-color: #3f68f7;
     color: #fff;
 }
-#portfolio .row.thumbnail_area hr {
-    posi
+
+/* 컨택트 */
+#map {
+    width: 660px;
+    height: 415px;
+    background-color: #fff3d3;
+}
+.contact_flex {
+    display: flex;
+    justify-content: space-between;
+}
+#contact .contact_text {
+    margin-left: 100px;
+}
+#contact .contact_text h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+#contact .contact_text h2 span {
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 20px;
+}
+#contact .contact_text p:nth-child(1) {
+    margin-bottom: 0;
 }
