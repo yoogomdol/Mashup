@@ -3,7 +3,7 @@
 * { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
 
 /* 여백초기화 */
-div.container.px-5{
+.container.px-5{
     padding-left: 0;
     padding-right: 0;
 }
@@ -12,10 +12,10 @@ div.container.px-5{
 }
 
 /* 네비게이션 */
-#mainNav .container{
-    max-width: 1200px;
+#mainNav .container.px-5{
+    /* width:  1200px; */
 }
-#mainNav div.container.px-5 .navbar-brand.fw-bold{
+#mainNav .container.px-5 .navbar-brand.fw-bold{
     font-weight: 900;
 }
 #mainNav .container.px-5 #navbarResponsive ul {
@@ -27,10 +27,11 @@ div.container.px-5{
 #mainNav .container.px-5 #navbarResponsive ul li a {
     padding: 28px 0;
     margin: 0;
+    word-break: break-all;
 }
 
 .container {
-    max-width: 1200px;
+    width: 1200px;
 }
 /* 메인 */
 .masthead {
@@ -42,6 +43,7 @@ div.container.px-5{
 }
 .masthead .col-lg-6 {
     padding-right: 0;
+    width: 100%;
 }
 .row.gx-5.align-items-center {
     margin-top: 130px;
@@ -86,7 +88,7 @@ p.section_sub {
     border-radius: 30px;
 }
 #works .left_wrap {
-    width: 580px;
+    width: 47.5%;
     height: 700px;
     background-color: #D6F2DE;
     background-image: url(../assets/img/componant/uiux.png), url(../assets/img/componant/phone1.png);
@@ -96,6 +98,7 @@ p.section_sub {
 }
 #works .right_wrap {
     align-content: space-between;
+    width: 47.5%;
 }
 #works .works_wrap p {
     font-size: 36px;
@@ -128,8 +131,7 @@ p.section_sub {
     padding-left: 50px;
 }
 #works .right_wrap .box {
-    width: 580px;
-    height: 330px;
+    height: 47.5%;
     background-color: rgb(98, 148, 212);
 }
 #works .right_wrap .box:nth-child(2) {
@@ -159,17 +161,19 @@ p.section_sub {
 }
 
 /* 포트폴리오 */
-#portfolio .row.thumbnail_area {
-    width: 1200px;
+/* #portfolio .row.thumbnail_area {
     display: flex;
     justify-content: space-between;
     margin-right: 0;
 }
-#portfolio .row.thumbnail_area div.col-sm-6.col-md-4 {
+#portfolio .row.thumbnail_area div.col-xs-12.col-sm-6.col-md-8{
     margin-top: 100px;
     width: 340px;
 }
-#portfolio .row.thumbnail_area .col-sm-6.col-md-4.topmargin0{
+#portfolio .row.thumbnail_area .col-xs-12.col-sm-6.col-md-8.topmargin0 {
+    margin-top: 0;
+}
+#portfolio .row.thumbnail_area .col-xs-12.col-sm-6.col-md-8.mogrid {
     margin-top: 0;
 }
 #portfolio .row.thumbnail_area div.thumbnail {
@@ -192,6 +196,39 @@ p.section_sub {
     height: 260px;
     border-radius: 30px;
     transition-duration: 1s;
+} */
+#portfolio .row.thumbnail_area {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+}
+#portfolio .row.thumbnail_area div.col-xs-12.col-sm-6.col-md-8{
+    margin-top: 100px;
+    max-width: 33.3%;
+}
+#portfolio .row.thumbnail_area .col-xs-12.col-sm-6.col-md-8.topmargin0 {
+    margin-top: 0;
+}
+#portfolio .row.thumbnail_area .col-xs-12.col-sm-6.col-md-8.mogrid {
+    margin-top: 0;
+}
+#portfolio .row.thumbnail_area div.thumbnail {
+    width: 100%;
+    margin-right: 0;
+}
+#portfolio .row.thumbnail_area div.thumbnail .img_wrap {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+#portfolio .row.thumbnail_area div.thumbnail .img_wrap img {
+    width: 100%;
+    border-radius: 30px;
+    transition-duration: 1s;
+}
+#portfolio .row.thumbnail_area div.thumbnail:hover img, #portfolio .row.thumbnail_area div.thumbnail .img_wrap img:hover {
+    transform: scale(1.5, 1.5);
+    transition-duration: 0.5s;
 }
 
 /* a태그 스타일 삭제 */
@@ -238,16 +275,19 @@ p.section_sub {
     background-position: 96% 86%;
 }
 #map {
-    width: 660px;
+    width: 60%;
     height: 415px;
-    background-color: #fff3d3;
+}
+#map img {
+    max-width: 100%;
 }
 .contact_flex {
     display: flex;
     justify-content: space-between;
 }
 #contact .contact_text {
-    margin-left: 100px;
+    margin-left: 50px;
+    width: 40%;
 }
 #contact .contact_text h2 {
     font-size: 20px;
@@ -262,4 +302,84 @@ p.section_sub {
 }
 #contact .contact_text p:nth-child(1) {
     margin-bottom: 0;
+}
+
+@media all and (min-width:1200px) {
+    #mainNav {
+        max-width: 100%
+    }
+    #mainNav .container {
+        max-width: 1140px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .masthead {
+        height: 1000px;
+        background-image: url(../assets/img/componant/circle_people.png),
+        url(../assets/img/componant/raise_hand.png),
+        url(../assets/img/componant/big_name.png),
+        url(../assets/img/componant/small_name.png);
+        background-repeat: no-repeat;
+        background-position: 90% 30%, 2% 100%, 10% 30%, 90% 100%;
+        background-color: #fff;
+    }
+    #portfolio .row.thumbnail_area .col-xs-12.col-sm-6.col-md-8.mogrid {
+        margin-top: 0;
+    }
+}
+@media all and (min-width:768px) and (max-width:1199px) {
+    .container.px-5 {
+        width: 85%;
+    }
+    #portfolio .row.thumbnail_area {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #portfolio .row.thumbnail_area .mogrid {
+        margin-top: 100px;
+    }
+    #portfolio .row.thumbnail_area {
+        display: flex;
+        justify-content: space-between;
+    }
+    #portfolio .row.thumbnail_area div.col-xs-12.col-sm-6.col-md-8{
+        margin-top: 100px;
+        max-width: 50%;
+    }
+
+}
+
+@media all and (min-width:480px) and  (max-width:767px) {
+    #portfolio .row.thumbnail_area {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #portfolio .row.thumbnail_area .mogrid {
+        margin-top: 100px;
+    }
+    #portfolio .row.thumbnail_area {
+        display: flex;
+        justify-content: space-between;
+    }
+    #portfolio .row.thumbnail_area div.col-xs-12.col-sm-6.col-md-8{
+        margin-top: 100px;
+        max-width: 50%;
+    }
+}
+@media all and (max-width:479px) {
+    #portfolio .row.thumbnail_area {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #portfolio .row.thumbnail_area .mogrid {
+        margin-top: 100px;
+    }
+    #portfolio .row.thumbnail_area {
+        display: flex;
+        justify-content: space-between;
+    }
+    #portfolio .row.thumbnail_area div.col-xs-12.col-sm-6.col-md-8{
+        margin-top: 100px;
+        max-width: 50%;
+    }
 }
